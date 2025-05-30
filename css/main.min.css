@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -306,4 +308,160 @@ template {
  */
 [hidden] {
   display: none;
-}/*# sourceMappingURL=mainmin.css.map */
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+}
+
+.site__btn {
+  border-radius: 6px;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  padding: 16px 31px;
+  border: none;
+  transition: 1s;
+}
+.site__btn:hover {
+  background-color: #66D2CF;
+}
+
+.header__img {
+  width: 236px;
+  height: 26px;
+}
+.header__container {
+  padding: 43px 0;
+}
+.header__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+  gap: 33px;
+}
+.header__link {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.header__link:hover {
+  opacity: 1;
+  color: #333D4B;
+}
+.header .hamburger__icon {
+  display: none;
+}
+.header .close__icon {
+  display: none;
+}
+.header button {
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
+  .header .hamburger__icon {
+    display: block;
+  }
+  .header .header__list {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .header__item + .header__item {
+    padding-top: 32px;
+  }
+  .headerlink {
+    color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+  }
+}
+.hero {
+  padding-top: 43px;
+  padding-bottom: 136px;
+}
+.hero__container {
+  width: 100%;
+  background-image: url(../../img/hero.png);
+  background-repeat: no-repeat;
+  padding: 117px 0;
+  border-radius: 6px;
+  background-size: contain;
+}
+.hero__box {
+  padding-left: 85px;
+}
+.hero__title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0px;
+  max-width: 493px;
+  color: #FEFCF7;
+}
+.hero__text {
+  max-width: 445px;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #FEFCF7;
+}
+
+h1 {
+  color: red;
+}/*# sourceMappingURL=main.min.css.map */

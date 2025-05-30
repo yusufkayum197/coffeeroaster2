@@ -1,0 +1,51 @@
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    height:100%
+}
+
+body{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+
+img{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1280px;
+}
+
+.site__btn{
+    border-radius: 6px;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    padding: 16px 31px;
+    border: none;
+    transition: 1s ;
+    
+    &:hover{
+        background-color: #66D2CF;
+    }
+}
