@@ -1,0 +1,71 @@
+.collection{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    
+    &__container{
+        max-width: 1111px;
+        background-image: url(../../img/collectionback.png);
+        background-repeat: no-repeat;
+        background-position: top -60px center;
+    }
+    & img{
+        padding-top: 70px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    &__title{
+        max-width: 255px;
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #333D4B;
+        padding-top: 71px;
+        padding-bottom: 24px;      
+    }
+    &__text{
+        max-width: 255px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #333D4B;    
+        align-items: center; 
+    }
+}
+
+@media only screen and (max-width:797px){
+    .collection__list{
+        flex-direction: column;
+    }
+    .collection__item{
+        display: flex;
+    }
+    .collection__item h2{
+        text-align: left;
+    }
+    .collection__item p{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .collection__item{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .collection__item h2{
+        text-align: center;
+    }
+    .collection__item p{
+        text-align: center;
+    }
+}

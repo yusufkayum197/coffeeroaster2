@@ -7,12 +7,13 @@
         background-image: url(../../img/hero.png);
         background-repeat: no-repeat;
         padding: 117px 0;
+        padding-left: 85px;
         border-radius: 6px;
         background-size: contain;
     }
-    &__box{
-        padding-left: 85px;
-    }
+    // &__box{
+    //     padding-left: 85px;
+    // }
     &__title{
         max-width: 493px;
         font-family: "Fraunces", sans-serif;
@@ -20,25 +21,74 @@
         font-size: 72px;
         line-height: 72px;
         letter-spacing: 0px;
-        color: #FEFCF7;  
+        color: #FEFCF7;
     }
+
     &__text{
         max-width: 445px;
-        padding-top: 32px;
-        padding-bottom: 56px;
-        font-family: "Barlow",sans-serif;
+        font-family: "Barlow", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0px;        
         color: #FEFCF7;
+        // padding-top: 32px;
+        padding-bottom: 56px;
+    }
+
+    &__site__btn{
+        padding: 15px 31px;
+        border-radius: 6px;
+        background: #0E8784;
+        color: #FEFCF7;
+        text-align: center;
+        font-family: "Fraunces 9pt", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 25px;
     }
 }
 
-@media only screen and(max-width: 767px){
+@media only screen and (max-width: 767px){
     .hero__container{
         max-width: 670px;
         padding: 104px 0;
-        
+        padding-left: 58px;
+        background-image: url(../../img/hero-tablet.png);
+        background-size: cover;
+    }
+    .hero__title{
+        max-width: 329px;
+        font-size: 48px;
+    }
+    .hero__text{
+        max-width: 393px;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .hero__container{
+        width: 100%;
+        height: 100%;
+        background-image: url(../../img/hero-phone.jpg);
+        background-size: cover;
+        text-align: center;
+        padding-left: 0;
+    }
+    .hero__box{
+        text-align: center;
+        padding-left: 28%;
+    }
+    .hero__title{
+        max-width: 279px;
+        font-size: 32px;
+    }
+    .hero__text{
+        max-width: 279px;
+        font-size: 15px;
+    }
+    .site__btn{
+        margin-right: 35%;
     }
 }

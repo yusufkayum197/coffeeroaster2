@@ -401,22 +401,36 @@ ul, ol {
   background-color: transparent;
 }
 
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 0 20px;
+  }
+}
 @media only screen and (max-width: 570px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header__container {
+    padding-left: 0px;
+  }
   .header .hamburger__icon {
     display: block;
   }
   .header .header__list {
+    width: 100%;
+    height: 100%;
+    top: 32%;
+    left: 0;
     display: none;
     position: absolute;
-    top: 40%;
-    left: 35%;
     flex-direction: column;
     text-align: center;
+    background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
   }
   .header .header__item + .header__item {
     padding-top: 32px;
   }
-  .headerlink {
+  .header__link {
     color: #333D4B;
     text-align: center;
     font-family: "Fraunces", sans-serif;
@@ -435,33 +449,251 @@ ul, ol {
   background-image: url(../../img/hero.png);
   background-repeat: no-repeat;
   padding: 117px 0;
+  padding-left: 85px;
   border-radius: 6px;
   background-size: contain;
 }
-.hero__box {
-  padding-left: 85px;
-}
 .hero__title {
+  max-width: 493px;
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
   letter-spacing: 0px;
-  max-width: 493px;
   color: #FEFCF7;
 }
 .hero__text {
   max-width: 445px;
-  padding-top: 32px;
-  padding-bottom: 56px;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0px;
   color: #FEFCF7;
+  padding-bottom: 56px;
+}
+.hero__site__btn {
+  padding: 15px 31px;
+  border-radius: 6px;
+  background: #0E8784;
+  color: #FEFCF7;
+  text-align: center;
+  font-family: "Fraunces 9pt", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
 }
 
-h1 {
-  color: red;
+@media only screen and (max-width: 767px) {
+  .hero__container {
+    max-width: 670px;
+    padding: 104px 0;
+    padding-left: 58px;
+    background-image: url(../../img/hero-tablet.png);
+    background-size: cover;
+  }
+  .hero__title {
+    max-width: 329px;
+    font-size: 48px;
+  }
+  .hero__text {
+    max-width: 393px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .hero__container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/hero-phone.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-left: 0;
+  }
+  .hero__box {
+    text-align: center;
+    padding-left: 28%;
+  }
+  .hero__title {
+    max-width: 279px;
+    font-size: 32px;
+  }
+  .hero__text {
+    max-width: 279px;
+    font-size: 15px;
+  }
+  .site__btn {
+    margin-right: 35%;
+  }
+}
+.collection {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.collection__container {
+  max-width: 1111px;
+  background-image: url(../../img/collectionback.png);
+  background-repeat: no-repeat;
+  background-position: top -60px center;
+}
+.collection img {
+  padding-top: 70px;
+}
+.collection__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.collection__title {
+  max-width: 255px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #333D4B;
+  padding-top: 71px;
+  padding-bottom: 24px;
+}
+.collection__text {
+  max-width: 255px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #333D4B;
+  align-items: center;
+}
+
+@media only screen and (max-width: 797px) {
+  .collection__list {
+    flex-direction: column;
+  }
+  .collection__item {
+    display: flex;
+  }
+  .collection__item h2 {
+    text-align: left;
+  }
+  .collection__item p {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .collection__item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .collection__item h2 {
+    text-align: center;
+  }
+  .collection__item p {
+    text-align: center;
+  }
+}
+.choose {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.choose__container {
+  max-width: 1280px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-image: url(../../img/choose\ back.png);
+  background-repeat: no-repeat;
+  padding-left: 85px;
+}
+.choose__head {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FEFCF7;
+  text-align: center;
+  padding-top: 100px;
+}
+.choose__desc {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FEFCF7;
+  max-width: 540px;
+  padding-top: 32px;
+  margin-left: 285px;
+  padding-bottom: 86px;
+}
+.choose__list {
+  display: flex;
+  gap: 30px;
+}
+.choose__item {
+  width: 350px;
+  height: 382px;
+  background-color: #0E8784;
+  border-radius: 8px;
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+.choose__title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FEFCF7;
+  padding-top: 67px;
+}
+.choose__text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FEFCF7;
+  padding-top: 24px;
+  width: 255px;
+  margin-left: 47px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .choose__desc {
+    margin-left: 74px;
+  }
+  .choose__list {
+    flex-direction: column;
+    padding: 41px 70px;
+  }
+  .choose__item {
+    padding-top: 0;
+    padding-left: 70px;
+    width: 573px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+  }
+  .choose__desc {
+    padding-left: 0;
+  }
+  .choose__title {
+    padding-top: 41px;
+    text-align: left;
+    padding-left: 45px;
+  }
+  .choose__text {
+    max-width: 344px;
+    padding-top: 16px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.min.css.map */

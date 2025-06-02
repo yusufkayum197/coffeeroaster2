@@ -1,0 +1,110 @@
+.choose{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    
+    &__container{
+        max-width: 1280px;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        background-image: url(../../img/choose\ back.png);
+        background-repeat: no-repeat;
+        padding-left: 85px;
+    }
+    &__head{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #FEFCF7; 
+        text-align: center;
+        padding-top: 100px;
+    }
+    &__desc{
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #FEFCF7;
+        max-width: 540px;
+        padding-top: 32px;
+        margin-left: 285px;
+        padding-bottom: 86px;
+    }
+   
+    &__list{
+        display: flex;
+
+        gap: 30px;
+    }
+    &__item{
+        width: 350px;
+        height: 382px;
+        background-color: #0E8784;
+        border-radius: 8px;
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+    
+    
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #FEFCF7;
+        padding-top: 67px;
+    }
+    &__text{
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #FEFCF7;
+        padding-top: 24px;
+        width: 255px;
+        margin-left: 47px;
+    }
+    
+}
+
+@media only screen and (max-width:1100px){
+    .choose__desc{
+        margin-left: 74px;
+    }
+    .choose__list{
+        flex-direction: column;
+        padding: 41px 70px;
+    }
+    .choose__item{
+        padding-top: 0;
+        padding-left: 70px;
+        width: 573px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+       
+    }
+    .choose__desc{
+        padding-left: 0;
+    }
+    .choose__title{
+        padding-top: 41px;
+        text-align: left;
+        padding-left: 45px;
+    }
+
+    .choose__text{
+        max-width: 344px;
+        padding-top: 16px;
+        text-align: left;
+    }
+}

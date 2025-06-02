@@ -43,22 +43,38 @@
 
 // respponsive mobile
 
+@media only screen and (max-width:767px){
+    .header{
+        padding: 0 20px;
+    }
+}
+
 @media only screen and (max-width:570px){
+    .header{
+        padding: 0 20px;
+    }
+    .header__container{
+        padding-left: 0px;
+    }
     .header .hamburger__icon{
         display: block;
     }
     .header .header__list{
+        width: 100%;
+        height: 100%;
+        top: 32%;
+        left: 0;
         display: none;
         position: absolute;
-        top: 40%;
-        left: 35%;
         flex-direction: column;
         text-align: center;
+        background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+        
     }
     .header .header__item+.header__item{
         padding-top: 32px;
     }
-    .headerlink{
+    .header__link{
         color: #333D4B;
         text-align: center;
         font-family: "Fraunces", sans-serif;
