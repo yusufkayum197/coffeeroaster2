@@ -1,0 +1,142 @@
+.about-hero{
+    padding-top: 43px;
+    padding-bottom: 136px;
+    
+    &__container{
+        width: 100%;
+        background-image: url(../../img/about\ us\ hero.png);
+        background-repeat: no-repeat;
+        padding: 137px 0;
+        border-radius: 6px;
+        // background-size: contain;
+    }
+    &__box{
+        padding-left: 85px;
+    }
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0px;
+        color: #FEFCF7;  
+    }
+    &__text{
+        padding-top: 32px;
+        padding-bottom: 56px;
+        font-family: "Barlow",sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;        
+        color: #FEFCF7;
+        max-width: 445px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .about-hero{
+        padding: 0 20px;
+    }
+    .about-hero__container{
+        background-image: url(../../img/hero\ tablet.jpg);
+        background-size: cover;
+    }
+    .about-hero__title{
+        max-width: 329px;
+        font-size: 48px;
+    }
+    .about-hero__text{
+        max-width: 393px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+
+    .about-hero{
+        padding-left: 15%;
+    }
+    .about-hero__text{
+        width: 329px;
+    }
+}
+@media only screen and (max-width: 680px){
+    .about-hero{
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 630px){
+
+    .about-hero__container{
+        padding-left: 10%;
+        background-image: url(../../img/herophone.jpg);
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+    }
+    .about-hero__title{
+        text-align: center;
+        font-size: 32px;
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        padding-right: 10%;
+    }
+    .about-hero__text{
+        width: 279px;
+        font-size: 17px;
+        opacity: 0.8;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .about-hero{
+        padding-left: 10%;
+    }
+    .about-hero__container{
+        background-image: url(../../img/herophone.jpg);
+        background-size: cover;
+        text-align: center;
+    }
+    .about-hero__box{
+        padding-right: 20%;
+    }
+    .about-hero__text{
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .about-hero{
+        padding-left: 15%;
+    }
+    .about-hero__box{
+        padding-right: 45%;
+        width: 427px;
+    }
+    .about-hero__text{
+        padding-right: 45%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .about-hero{
+        padding-left: 15%;
+        width: 550px;
+    }
+    .about-hero__box{
+        padding-right: 25%;
+        width: 527px;
+    }
+    .about-hero__text{
+        padding-right: 5%;
+    }
+}

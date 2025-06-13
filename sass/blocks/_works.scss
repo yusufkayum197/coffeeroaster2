@@ -1,0 +1,137 @@
+.works{
+    padding-bottom: 200px;
+    
+    &__container{
+        text-align: left;
+    }
+    &__head{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        color: #83888F;   
+        padding-bottom: 80px;     
+    }
+    &__nuqta{
+        display: flex;
+        justify-content: space-between;
+        background-image: url(../../img/worksline.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 785px;
+    }
+    &__circle{
+        width: 31px;
+        height: 31px;
+        border-width: 2px;
+        background: #FEFCF7;
+        border: 2px solid #0E8784;
+        border-radius: 50%;
+    }
+    
+    &__box{
+        padding-top: 67px 64px;
+    }
+    &__list{
+        display: flex;
+        gap: 95px;
+    }
+    &__item{
+        width: 285px;
+        height: 355px;
+        padding-top: 67px;
+        padding-bottom: 64px;
+    }
+    &__number{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: 0px;
+        color: #FDD6BA;
+        padding-bottom: 42px;
+    }
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #333D4B;
+        max-width: 255px;     
+    }
+    &__text{
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #333D4B;
+        padding-top: 42px;     
+    }
+    &__link{
+        margin-top: 130px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:862px){
+    .works__link{
+        margin-top: 250px;
+    }
+}
+
+@media only screen and (max-width:670px){
+    .works__link{
+        margin-top: 350px;
+    }
+    .works__title{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .works__text{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:590px){
+    .works__container{
+        padding-top: 520px;
+        align-items: center;
+        text-align: center;
+        padding-left: 30%;
+    }
+    .works__head{
+        padding-right: 15%;
+        padding-bottom: 0px;
+    }
+    .works__number{
+        padding-right: 10%;
+    }
+    .works__list{
+        max-width: 327px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .works__title{
+        max-width: 390px;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 32px;
+        padding-right: 5%;
+    }
+    .works__text{
+        max-width: 312px;
+        font-size: 15px;
+        margin-left: 0%;
+    }
+    .works__nuqta{
+        display: none;
+    }
+    .works__link{
+        width: 217px;
+        margin-top: 100px;
+        margin-right: 13%;
+    }
+}
