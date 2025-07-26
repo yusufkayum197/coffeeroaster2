@@ -1,0 +1,192 @@
+.active-header{
+    &__img{
+        width: 236px;
+        height: 26px;
+    }
+    &__container{
+        padding: 43px 0;
+    }
+    &__navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list{
+        display: flex;
+        gap: 33px;
+    }
+    &__link{
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.92px;
+        text-transform: uppercase;
+        color: #83888F;
+        
+        &:hover{
+            opacity: 1;
+            color: #333D4B;
+        }
+    }
+}
+
+// active end
+
+// hero start
+
+.active-hero{
+    padding-top: 43px;
+    padding-bottom: 168px;
+    
+    &__container{
+        background-image: url(../../img/Active.png);
+        background-repeat: no-repeat;
+        padding: 134px 0;
+        border-radius: 6px;
+    }
+    &__box{
+        padding-left: 85px;
+    }
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0px;
+        
+        color: #FEFCF7;  
+    }
+    &__text{
+        padding-top: 32px;
+        padding-bottom: 56px;
+        font-family: "Barlow",sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;        
+        color: #FEFCF7;
+        max-width: 445px;
+    }
+}
+
+// hero end
+
+
+// works start
+
+.works{
+    padding-bottom: 168px;
+    
+    &__container{
+        text-align: left;
+        background-color: #2C343E;
+        border-radius: 10px;
+        padding-bottom: 99px;
+    }
+    
+    &__nuqta{
+        display: flex;
+        justify-content: space-between;
+        background-image: url(../images/worksline.png);
+        background-size: 740px 2px;
+        background-repeat: no-repeat;
+        background-position: left 100px center;
+        max-width: 930px;
+    }
+    &__circle{
+        width: 31px;
+        height: 31px;
+        border-width: 2px;
+        background: #FEFCF7;
+        border: 2px solid #0E8784;
+        border-radius: 50%;
+        margin: 70px;
+    }
+    
+    &__box{
+        padding-left: 85px;
+        padding-bottom: 99px;
+    }
+    &__list{
+        display: flex;
+        gap: 95px;
+    }
+    &__item{
+        width: 285px;
+        height: 355px;
+        padding-top: 67px;
+        padding-bottom: 64px;
+    }
+    &__number{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: 0px;
+        color: #FDD6BA;    
+    }
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #FEFCF7;
+        max-width: 255px;     
+    }
+    &__text{
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #FEFCF7;
+        padding-top: 42px;     
+    }
+}
+
+// works end
+
+
+.footer{
+    
+    &__container{
+        background-color: #2C343E;
+        max-width: 1280px;
+        padding: 47px 85px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__list{
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__item {
+        a{
+            font-family: "Barlow", sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.92px;
+            text-transform: uppercase;
+            color: #83888F;
+            &:hover{
+                color: #0E8784;
+            }
+        }
+    }
+    &__social{
+        display: flex;
+        gap: 17px;
+    }
+    &__link:hover{
+        background-color: #FDD6BA;
+    }
+    
+    
+}
